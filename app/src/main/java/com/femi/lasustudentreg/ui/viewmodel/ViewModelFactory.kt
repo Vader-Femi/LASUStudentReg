@@ -1,4 +1,4 @@
-package com.femi.lasustudentreg.viewmodel
+package com.femi.lasustudentreg.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

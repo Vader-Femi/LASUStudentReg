@@ -1,4 +1,4 @@
-package com.femi.lasustudentreg.data.domain.use_case.presentation
+package com.femi.lasustudentreg.data.presentation
 
 data class RegistrationFormState(
     val firstName: String = "",

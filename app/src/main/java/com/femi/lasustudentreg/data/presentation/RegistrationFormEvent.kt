@@ -1,4 +1,4 @@
-package com.femi.lasustudentreg.data.domain.use_case.presentation
+package com.femi.lasustudentreg.data.presentation
 
 sealed class RegistrationFormEvent{
     data class DepartmentChanged(val department: String): RegistrationFormEvent()

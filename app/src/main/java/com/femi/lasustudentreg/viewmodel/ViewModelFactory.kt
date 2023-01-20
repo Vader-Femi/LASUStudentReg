@@ -3,6 +3,7 @@ package com.femi.lasustudentreg.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.femi.lasustudentreg.data.repository.MainActivityRepository
+import com.femi.lasustudentreg.ui.viewmodel.MainActivityViewModel
 
 class ViewModelFactory(
     private val repository: MainActivityRepository

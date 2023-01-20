@@ -6,8 +6,8 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.femi.lasustudentreg.data.domain.use_case.*
-import com.femi.lasustudentreg.data.domain.use_case.presentation.RegistrationFormEvent
-import com.femi.lasustudentreg.data.domain.use_case.presentation.RegistrationFormState
+import com.femi.lasustudentreg.data.presentation.RegistrationFormEvent
+import com.femi.lasustudentreg.data.presentation.RegistrationFormState
 import com.femi.lasustudentreg.data.repository.MainActivityRepository
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
