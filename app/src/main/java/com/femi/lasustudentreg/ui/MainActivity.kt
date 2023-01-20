@@ -34,8 +34,8 @@ import com.femi.lasustudentreg.data.presentation.RegistrationFormEvent
 import com.femi.lasustudentreg.data.repository.MainActivityRepository
 import com.femi.lasustudentreg.handleNetworkExceptions
 import com.femi.lasustudentreg.ui.theme.LASUStudentRegTheme
-import com.femi.lasustudentreg.ui.viewmodel.MainActivityViewModel
-import com.femi.lasustudentreg.ui.viewmodel.ViewModelFactory
+import com.femi.lasustudentreg.viewmodel.MainActivityViewModel
+import com.femi.lasustudentreg.viewmodel.ViewModelFactory
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlin.system.exitProcess

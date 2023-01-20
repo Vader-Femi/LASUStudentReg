@@ -7,8 +7,6 @@ data class RegistrationFormState(
     val lastNameError: String? = null,
     val email: String = "",
     val emailError: String? = null,
-    val matric: String = "",
-    val matricError: String? = null,
     val department: String = "",
     val departmentError: String? = null,
     val faculty: String = "",

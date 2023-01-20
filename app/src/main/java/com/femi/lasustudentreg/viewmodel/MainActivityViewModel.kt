@@ -19,7 +19,6 @@ class MainActivityViewModel(
     private val validateEmail: ValidateEmail = ValidateEmail(),
     private val validateFaculty: ValidateFaculty = ValidateFaculty(),
     private val validateJambScore: ValidateJambScore = ValidateJambScore(),
-    private val validateMatric: ValidateMatric = ValidateMatric(),
     private val validateFirstName: ValidateName = ValidateName(),
     private val validateLastName: ValidateName = ValidateName(),
 ): ViewModel() {
@@ -58,10 +57,6 @@ class MainActivityViewModel(
                 registrationFormState =
                     registrationFormState.copy(lastName = event.lastName)
             }
-            is RegistrationFormEvent.MatricChanged -> {
-                registrationFormState =
-                    registrationFormState.copy(matric = event.matric)
-            }
             RegistrationFormEvent.Submit -> {
                 validateRegistrationData()
             }
@@ -73,7 +68,6 @@ class MainActivityViewModel(
         val emailResult = validateEmail.execute(registrationFormState.email)
         val facultyResult = validateFaculty.execute(registrationFormState.faculty)
         val jambScoreResult = validateJambScore.execute(registrationFormState.jambScore)
-//        val matricResult = validateMatric.execute(registrationFormState.matric)
         val firstNameResult = validateFirstName.execute(registrationFormState.firstName)
         val lastNameResult = validateLastName.execute(registrationFormState.lastName)
 
@@ -83,7 +77,6 @@ class MainActivityViewModel(
             emailResult,
             facultyResult,
             jambScoreResult,
-//            matricResult,
             firstNameResult,
             lastNameResult,
         ).any { !it.successful }
@@ -93,7 +86,6 @@ class MainActivityViewModel(
             emailError = emailResult.errorMessage,
             facultyError = facultyResult.errorMessage,
             jambScoreError = jambScoreResult.errorMessage,
-//            matricError = matricResult.errorMessage,
             firstNameError = firstNameResult.errorMessage,
             lastNameError = lastNameResult.errorMessage,
         )
@@ -135,7 +127,6 @@ class MainActivityViewModel(
         val email = registrationFormState.email
         val faculty = registrationFormState.faculty
         val jambScore = registrationFormState.jambScore
-//        val matric = registrationFormState.matric
         val firstName = registrationFormState.firstName
         val lastName = registrationFormState.lastName
 
@@ -144,7 +135,6 @@ class MainActivityViewModel(
             "Email" to email,
             "Faculty" to faculty,
             "JambScore" to jambScore,
-//            "Matric" to matric,
             "FirstName" to firstName,
             "LastName" to lastName,
         )
