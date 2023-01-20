@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.femi.lasustudentreg.ui.UserDetailsScreen
 import com.femi.lasustudentreg.ui.WelcomeScreen
-import com.femi.lasustudentreg.ui.viewmodel.MainActivityViewModel
+import com.femi.lasustudentreg.viewmodel.MainActivityViewModel
 
 @Composable
 fun Navigation(
