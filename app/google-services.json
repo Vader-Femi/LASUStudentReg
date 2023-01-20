@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800902975265",
+    "project_id": "lasustudentreg-aca3f",
+    "storage_bucket": "lasustudentreg-aca3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800902975265:android:6572d8f38cc6af67dff860",
+        "android_client_info": {
+          "package_name": "com.femi.lasustudentreg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800902975265-ki8qt09kva3jsuq7opk91isajrr631t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtMLGeaM9ZPSKlQOTUFWIC5norCrEfdic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800902975265-ki8qt09kva3jsuq7opk91isajrr631t0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
